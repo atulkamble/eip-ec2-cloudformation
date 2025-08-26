@@ -7,6 +7,31 @@ Here’s a **cheat-sheet of AWS CloudFormation CLI commands** you can use for cr
 
 ---
 
+step1 = nano template.yaml 
+  
+ Paste 
+  
+ AWSTemplateFormatVersion: "2010-09-09" 
+ Resources: 
+   MyBucket: 
+     Type: AWS::S3::Bucket 
+     Properties: 
+       BucketName: my-simple-stack-bucket-lalit 
+  
+ Save & exit 
+  
+ next step 2 
+  
+ aws cloudformation create-stack \ 
+   --stack-name mystack \ 
+   --template-body file://template.yaml 
+   
+  
+  
+ step = 3 
+  
+ aws cloudformation describe-stacks --stack-name mystack
+
 # 🔹 AWS CloudFormation CLI Commands
 
 ## 1. **Validate a Template**
