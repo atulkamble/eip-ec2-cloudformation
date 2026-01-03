@@ -1,4 +1,4 @@
-# eip-ec2-clousformation
+# eip-ec2-cloudformation
 ```
 git clone https://github.com/atulkamble/eip-ec2-cloudformation.git
 cd eip-ec2-cloudformation
